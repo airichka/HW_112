@@ -1,4 +1,5 @@
-﻿int a;
+﻿
+int a;
 int b;
 
 Console.Write($"Введите первое число: ");
@@ -6,14 +7,9 @@ int.TryParse(Console.ReadLine()!, out a);
 Console.Write($"Введите второе число: ");
 int.TryParse(Console.ReadLine()!, out b); 
 
-int index = 0;
+if (a > b)
+Console.Write("{0} наибольшее число", a);
+else 
+Console.Write("{0} наибольшее число", b);
 
-while (index <= 5)
-{Console.Write($"{index} ");
-index ++;}
-
-Console.Write($"\n");
-for (int index2 = 0; index < 5; index ++ )
-
-{Console.Write($"{index2} ");
-}
+Console.ReadLine();
